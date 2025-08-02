@@ -1,0 +1,62 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+
+}
+
+.navbar {
+    display: flex;
+    max-width: 60%;
+    flex: 1;
+    gap: 10%;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px 20px;
+}
+
+.navbar-title {
+    font-size: 1.1rem;
+    font-weight: 650;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.navbar-link {
+    color: rgb(70, 70, 70);
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 1.4rem;
+    justify-content: flex-end;
+    width: 25%;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.navbar-action {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-signup {
+    background-color: black;
+    color: white;
+    padding: 0.15rem 1.1rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+}

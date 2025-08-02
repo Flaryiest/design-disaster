@@ -1,0 +1,64 @@
+.index-page {
+    background-color: rgb(255, 232, 248);
+    padding-top: 120px;
+    min-height: 60dvh;
+    display: flex;
+    justify-content: center;
+}
+
+.section-one-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    gap: 2.3rem;
+}
+
+.section-one-alert {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: rgba(255, 229, 85, 0.6);
+    flex-grow: 0;
+    align-self: flex-start;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.section-one-alert-text {
+    font-weight: 650;
+    border-right: 2px solid rgb(114, 114, 114);
+    padding-right: 0.5rem;
+}
+
+.section-one-alert-link {
+    color: rgb(43, 43, 43);
+}
+
+.section-one-title {
+    font-size: 3rem;
+    font-weight: 550;
+    line-height: 3.4rem;
+}
+
+.section-one-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    max-width: 50%;
+}
+
+.section-one-signup-link {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.5rem;
+    background-color: black;
+    color: rgb(255, 239, 242);
+    padding: 0.9rem 1.7rem;
+    border-radius: 0.6rem;
+}

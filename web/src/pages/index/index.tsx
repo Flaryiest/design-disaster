@@ -16,6 +16,38 @@ export default function IndexPage() {
                     <p className="section-one-description">We've built the AI solution to meaningless fluff, enhancing your learning and increasing your grades</p>
                     <Link to="/signup" className="section-one-signup-link">Sign Up!</Link>
                 </div>
+                <div className="homework-visual">
+                        <div className="paper-stack">
+                            <div className="paper paper-back"></div>
+                            <div className="paper paper-middle"></div>
+                            <div className="paper paper-front">
+                                <div className="paper-header">
+                                    <div className="assignment-title">Research Assignment</div>
+                                    <div className="due-date">Due: March 15</div>
+                                </div>
+                                <div className="paper-content">
+                                    <div className="content-line long"></div>
+                                    <div className="content-line medium"></div>
+                                    <div className="content-line long"></div>
+                                    <div className="content-line short"></div>
+                                    <div className="content-line medium"></div>
+                                    <div className="content-line long"></div>
+                                    <div className="content-line short"></div>
+                                    <div className="content-line medium"></div>
+                                </div>
+                                <div className="paper-highlight">
+                                    <div className="highlight-text">AI Enhanced</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+            <div className="how-it-works-section">
+                <div className="how-it-works-container">
+                    <p className="how-it-works-subtitle">How Fable works</p>
+                    <h2 className="how-it-works-title">Transform your academic workflow with three simple steps that leverage cutting-edge AI technology to enhance your learning experience and boost your grades</h2>
+                </div>
+            </div>
 
             {/* Steps Section */}
             <div className="steps-section">

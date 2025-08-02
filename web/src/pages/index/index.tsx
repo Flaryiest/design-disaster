@@ -10,12 +10,10 @@ export default function IndexPage() {
                     <p className="section-one-alert-text">We just launched!</p>
                     <Link to="/demo" className="section-one-alert-link">Learn more</Link>
                 </div>
-
-                <h1 className="section-one-title">The future of medical chart review: frictionless, scalable, and trustworthy</h1>
-                <p className="section-one-description">We've built the AI layer for chart review - physician-level reasoning that unlocks value and improves care.</p>
+                <h1 className="section-one-title">Fable has you covered in every way: presentations, notes, and assignments</h1>
+                <p className="section-one-description">We've built the AI solution to meaningless fluff, enhancing your learning and increasing your grades</p>
                 <Link to="/signup" className="section-one-signup-link">Sign Up!</Link>
             </div>
-
         </div>
     </>
 }

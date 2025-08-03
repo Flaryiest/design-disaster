@@ -7,9 +7,8 @@ export default function Navbar() {
             <nav className="navbar">
             <h1 className="navbar-title">Fable</h1>
             <ul className="navbar-links">
-                <li><Link to="/" className="navbar-link">Home</Link></li>
-                <li><Link to="/about" className="navbar-link">About</Link></li>
-                <li><Link to="/contact" className="navbar-link">Contact</Link></li>
+                <li><Link to="/products" className="navbar-link">Products</Link></li>
+                <li><Link to="/resources" className="navbar-link">Resources</Link></li>
                 <li><Link to="/demo" className="navbar-link">Demo</Link></li>
             </ul>
             <div className="navbar-actions">

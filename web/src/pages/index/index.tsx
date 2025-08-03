@@ -1,6 +1,8 @@
 import "./index.css"
 import Navbar from "../../components/navbar/navbar.tsx"
+import Footer from "../../components/footer/footer.tsx"
 import { Link } from "react-router-dom"
+
 export default function IndexPage() {
     return <>
         <Navbar />
@@ -240,6 +242,6 @@ export default function IndexPage() {
             </div>
 
         </div>
-
+        <Footer />
     </>
 }

@@ -6,7 +6,15 @@ export default function IndexPage() {
         <Navbar />
         <div className="index-page">
             <div className="section-one-background">
+            
             </div>
+            <div className="how-it-works-section">
+                <div className="how-it-works-container">
+                    <p className="how-it-works-subtitle">How Fable works</p>
+                    <h2 className="how-it-works-title">Transform your academic workflow with three simple steps that leverage cutting-edge AI technology to enhance your learning experience and boost your grades</h2>
+                </div>
+            </div>
+
                 <div className="section-one-container">
                     <div className="section-one-alert">
                         <p className="section-one-alert-text">We just launched!</p>
@@ -36,19 +44,12 @@ export default function IndexPage() {
                                     <div className="content-line medium"></div>
                                 </div>
                                 <div className="paper-highlight">
-                                    <div className="highlight-text">AI Enhanced</div>
+                                    <div className="highlight-text">100%</div>
                                 </div>
                             </div>
                         </div>
                 </div>
-
-            <div className="how-it-works-section">
-                <div className="how-it-works-container">
-                    <p className="how-it-works-subtitle">How Fable works</p>
-                    <h2 className="how-it-works-title">Transform your academic workflow with three simple steps that leverage cutting-edge AI technology to enhance your learning experience and boost your grades</h2>
-                </div>
-            </div>
-
+            <div className="how-it-works-background"></div>
             {/* Steps Section */}
             <div className="steps-section">
                 <div className="steps-container">

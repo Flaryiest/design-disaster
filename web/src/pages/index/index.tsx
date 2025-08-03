@@ -80,6 +80,154 @@ export default function IndexPage() {
                 </div>
             </div>
 
+            {/* Testimonial/Metrics Section */}
+            <div className="metrics-section">
+                <div className="metrics-container">
+                    <div className="metrics-content">
+                        <div className="metrics-header">
+                            <h2 className="metrics-title">
+                                <span className="highlight-brand">StudySync</span> saw a 47% increase in 
+                                student engagement. <span className="highlight-brand">QuickLearn </span> 
+                                reduced study time from 5 hours to 2.1 hours. 
+                                <span className="highlight-brand"> AcademiaPro</span> multiplied 
+                                completion rates by 3.2x
+                            </h2>
+                        </div>
+                        <div className="metrics-sidebar">
+                            <div className="sidebar-content">
+                                <h3 className="sidebar-title">Get started fast with proven templates</h3>
+                                <p className="sidebar-description">
+                                    Fable's infrastructure powers over 150 hours of study sessions 
+                                    every week—so you can trust it's battle-tested.
+                                </p>
+                                <button className="sidebar-cta">Talk to academic advisor</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Features Dashboard Section */}
+            <div className="features-dashboard-section">
+                <div className="features-dashboard-container">
+                    <div className="features-left-column">
+                        {/* Collaborate Card */}
+                        <div className="feature-card-large collaborate-card">
+                            <div className="card-content">
+                                <h3 className="card-title">Collaborate as a team</h3>
+                                <p className="card-description">
+                                    See your entire team's study progress along with AI-powered insights.
+                                </p>
+                            </div>
+                            <div className="card-visual">
+                                <div className="notification-stack">
+                                    <div className="notification">
+                                        <div className="notification-dot"></div>
+                                        <div className="notification-content">
+                                            <strong>Study Session</strong>
+                                            <span>Today 2:34 pm</span>
+                                        </div>
+                                    </div>
+                                    <div className="notification">
+                                        <div className="notification-dot green"></div>
+                                        <div className="notification-content">
+                                            <strong>Quiz Completed</strong>
+                                            <span>24 Jan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Response Time Card */}
+                        <div className="feature-card-medium response-card">
+                            <div className="response-visual">
+                                <div className="response-number">3x</div>
+                                <div className="response-text">your response time</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="features-center-column">
+                        {/* Chat/Messages Card */}
+                        <div className="feature-card-tall messages-card">
+                            <div className="messages-header">
+                                <h4>Study Sessions</h4>
+                                <div className="message-tabs">
+                                    <span className="tab active">Open</span>
+                                    <span className="tab">Closed</span>
+                                    <span className="tab">Starred</span>
+                                </div>
+                            </div>
+                            <div className="messages-list">
+                                <div className="message-item">
+                                    <div className="message-avatar"></div>
+                                    <div className="message-content">
+                                        <div className="message-name">Study Insights</div>
+                                        <div className="message-preview">Your learning pattern analysis...</div>
+                                    </div>
+                                    <div className="message-time">9:45 AM</div>
+                                </div>
+                                <div className="message-item">
+                                    <div className="message-avatar"></div>
+                                    <div className="message-content">
+                                        <div className="message-name">Quiz Helper</div>
+                                        <div className="message-preview">Practice questions generated...</div>
+                                    </div>
+                                    <div className="message-time">10:12 AM</div>
+                                </div>
+                                 <div className="message-item">
+                                    <div className="message-avatar"></div>
+                                    <div className="message-content">
+                                        <div className="message-name">Study Copilot</div>
+                                        <div className="message-preview">Your notes summary is ready...</div>
+                                    </div>
+                                    <div className="message-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Unified Inbox Card */}
+                        <div className="feature-card-medium inbox-card">
+                            <h4 className="card-title">One inbox for all</h4>
+                            <p className="card-description">
+                                Manage assignments, notes, and study materials across all subjects in one place.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="features-right-column">
+                        {/* Brand Card */}
+                        <div className="feature-card-medium brand-card">
+                            <div className="brand-content">
+                                <h2 className="brand-title">Lightweight AI Study Assistant</h2>
+                            </div>
+                        </div>
+
+                        {/* Study Summary Card */}
+                        <div className="feature-card-large summary-card">
+                            <div className="summary-header">
+                                <div className="summary-icon"></div>
+                                <h4>Study Summary</h4>
+                            </div>
+                            <div className="summary-content">
+                                <p>Start by categorizing key concepts and linking them with topics you've covered in previous sessions.</p>
+                                <p>This will help you quickly pinpoint where to find relevant information. If the internal article system has a search feature, use specific keywords related to the query to locate relevant sections.</p>
+                                <Link to="/signup" className="summary-button">Start Studying</Link>
+                            </div>
+                        </div>
+
+                        {/* Auto Recording Card */}
+                        <div className="feature-card-medium recording-card">
+                            <h4 className="card-title">Auto note recording & transcription</h4>
+                            <p className="card-description">
+                                Record every lecture automatically to preserve a record of what was covered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="cta-section">
                 <div className="cta-container">
                     <h2 className="cta-title">Ready to transform your learning?</h2>

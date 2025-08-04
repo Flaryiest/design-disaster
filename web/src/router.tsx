@@ -2,7 +2,7 @@ import { Route, createBrowserRouter, createRoutesFromElements } from "react-rout
 import HomePage from "./pages/index/index.tsx";
 import DemoPage from "./pages/demo/demo.tsx";
 import ResourcesPage from "./pages/resources/resources.tsx";
-import ProductsPage from "./pages/products/products.tsx";
+import PricingPage from "./pages/pricing/pricing.tsx";
 import LoginPage from "./pages/login/login.tsx";
 import SignUpPage from "./pages/signup/signup.tsx";
 const router = createBrowserRouter(
@@ -11,7 +11,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<HomePage />} />
       <Route path="/demo" element={<DemoPage />} />
       <Route path="/resources" element={<ResourcesPage />} />
-      <Route path="/products" element={<ProductsPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignUpPage />} />
     </>

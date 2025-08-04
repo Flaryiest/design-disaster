@@ -7,8 +7,7 @@ export default function SignUpPage() {
         email: '',
         password: '',
         username: '',
-        country: 'United States',
-        emailPreferences: false
+        country: 'United States'
     });
 
     const [errors, setErrors] = useState({
@@ -93,15 +92,16 @@ export default function SignUpPage() {
                     </div>
                     {/* Right Side - Form */}
                     <div className="signup-right">
+                        <div className="signup-redirect">
+                            <p className="login-link">
+                                Already have an account? <Link to="/login">Sign in →</Link>
+                            </p>
+                        </div>
                         <div className="signup-form-section">
                             <div className="form-container">
                                 <div className="form-header">
                                     <h2 className="form-title">Sign up to Fable</h2>
-                                    <p className="login-link">
-                                        Already have an account? <Link to="/login">Sign in →</Link>
-                                    </p>
                                 </div>
-
                                 <form onSubmit={handleSubmit} className="signup-form">
                                     {/* Email Field */}
                                     <div className="form-group">
@@ -183,24 +183,6 @@ export default function SignUpPage() {
                                         <p className="country-hint">
                                             For compliance reasons, we're required to collect country information to send you occasional updates and announcements.
                                         </p>
-                                    </div>
-
-                                    {/* Email Preferences */}
-                                    <div className="form-group">
-                                        <label className="form-label">Email preferences</label>
-                                        <div className="checkbox-group">
-                                            <input
-                                                type="checkbox"
-                                                id="emailPreferences"
-                                                name="emailPreferences"
-                                                checked={formData.emailPreferences}
-                                                onChange={handleInputChange}
-                                                className="form-checkbox"
-                                            />
-                                            <label htmlFor="emailPreferences" className="checkbox-label">
-                                                Receive occasional product updates and announcements
-                                            </label>
-                                        </div>
                                     </div>
 
                                     {/* Submit Button */}

@@ -179,3 +179,15 @@ button {
 input, select, textarea, button {
   font-family: "Bricolage Grotesque"
 }
+
+
+
+.page {
+    padding-top: 120px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}

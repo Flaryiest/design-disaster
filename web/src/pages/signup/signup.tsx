@@ -17,6 +17,7 @@ export default function SignUpPage() {
     });
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isIncludedOpen, setIsIncludedOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const countries = [
@@ -75,6 +76,10 @@ export default function SignUpPage() {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const toggleIncluded = () => {
+        setIsIncludedOpen(!isIncludedOpen);
+    };
+
     const validateForm = () => {
         const newErrors = { email: '', password: '', username: '' };
         let isValid = true;
@@ -131,6 +136,58 @@ export default function SignUpPage() {
                                     Explore Fable's core features for individuals and organizations.
                                 </p>
                                 
+                                {/* See what's included section */}
+                                <div className="included-section">
+                                    <button 
+                                        className="included-toggle"
+                                        onClick={toggleIncluded}
+                                        aria-expanded={isIncludedOpen}
+                                    >
+                                        <span>See what's included</span>
+                                        <svg 
+                                            className={`included-arrow ${isIncludedOpen ? 'open' : ''}`}
+                                            width="16" 
+                                            height="16" 
+                                            viewBox="0 0 16 16" 
+                                            fill="none"
+                                        >
+                                            <path 
+                                                d="M12 6L8 10L4 6" 
+                                                stroke="currentColor" 
+                                                strokeWidth="2" 
+                                                strokeLinecap="round" 
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </button>
+                                    
+                                    {isIncludedOpen && (
+                                        <div className={`included-content ${isIncludedOpen ? 'open' : ''}`}>
+                                            <div className="included-features">
+                                                <div className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>Access to core AI learning tools</span>
+                                                </div>
+                                                <div className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>Up to 10 assignments per month</span>
+                                                </div>
+                                                <div className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>Basic progress tracking</span>
+                                                </div>
+                                                <div className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>Community support access</span>
+                                                </div>
+                                                <div className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>Mobile app access</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>

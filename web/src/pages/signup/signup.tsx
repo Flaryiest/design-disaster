@@ -1,5 +1,5 @@
 import "./signup.css"
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 export default function SignUpPage() {
@@ -16,6 +16,41 @@ export default function SignUpPage() {
         username: ''
     });
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    const countries = [
+        'United States',
+        'Canada', 
+        'United Kingdom',
+        'Australia',
+        'Germany',
+        'France',
+        'Japan',
+        'Brazil',
+        'India',
+        'Netherlands',
+        'Sweden',
+        'Norway',
+        'Denmark',
+        'Switzerland',
+        'Other'
+    ];
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value, type } = e.target;
         const checked = (e.target as HTMLInputElement).checked;
@@ -29,6 +64,15 @@ export default function SignUpPage() {
         if (errors[name as keyof typeof errors]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
         }
+    };
+
+    const handleCountrySelect = (country: string) => {
+        setFormData(prev => ({ ...prev, country }));
+        setIsDropdownOpen(false);
+    };
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
     };
 
     const validateForm = () => {
@@ -165,21 +209,33 @@ export default function SignUpPage() {
                                         <label htmlFor="country" className="form-label">
                                             Your Country/Region <span className="required">*</span>
                                         </label>
-                                        <select
-                                            id="country"
-                                            name="country"
-                                            value={formData.country}
-                                            onChange={handleInputChange}
-                                            className="form-select"
-                                        >
-                                            <option value="United States">United States of America</option>
-                                            <option value="Canada">Canada</option>
-                                            <option value="United Kingdom">United Kingdom</option>
-                                            <option value="Australia">Australia</option>
-                                            <option value="Germany">Germany</option>
-                                            <option value="France">France</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <div className="custom-dropdown" ref={dropdownRef}>
+                                            <button
+                                                type="button"
+                                                className="dropdown-trigger"
+                                                onClick={toggleDropdown}
+                                                aria-expanded={isDropdownOpen}
+                                            >
+                                                <span className="dropdown-value">{formData.country}</span>
+                                                <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>
+                                                    ▼
+                                                </span>
+                                            </button>
+                                            {isDropdownOpen && (
+                                                <div className="dropdown-menu">
+                                                    {countries.map((country) => (
+                                                        <button
+                                                            key={country}
+                                                            type="button"
+                                                            className={`dropdown-option ${formData.country === country ? 'selected' : ''}`}
+                                                            onClick={() => handleCountrySelect(country)}
+                                                        >
+                                                            {country}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
                                         <p className="country-hint">
                                             For compliance reasons, we're required to collect country information to send you occasional updates and announcements.
                                         </p>

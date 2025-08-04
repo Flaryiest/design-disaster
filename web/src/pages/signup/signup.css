@@ -65,12 +65,14 @@
 .signup-redirect {
     width: 100%;
     text-align: right;
+    padding-right: 1rem;
 }
 
 .signup-form-section {
     width: 100%;
     max-width: 480px;
     margin-top: 4%;
+    padding-right: 1rem;
 }
 
 .form-container {
@@ -157,6 +159,129 @@
     border-bottom-color: #ef4444;
 }
 
+/* Custom Dropdown Styles */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-trigger {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(249, 168, 212, 0.3);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.dropdown-trigger:hover,
+.dropdown-trigger:focus {
+    border-bottom-color: #f9a8d4;
+}
+
+.dropdown-value {
+    flex: 1;
+    text-align: left;
+}
+
+.dropdown-arrow {
+    font-size: 0.7rem;
+    color: rgba(51, 51, 51, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid rgba(249, 168, 212, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(249, 168, 212, 0.15);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    animation: dropdownSlide 0.2s ease-out;
+}
+
+@keyframes dropdownSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-option {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-family: "Inter";
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    border-bottom: 1px solid rgba(249, 168, 212, 0.1);
+}
+
+.dropdown-option:last-child {
+    border-bottom: none;
+}
+
+.dropdown-option:hover {
+    background: rgba(249, 168, 212, 0.1);
+    color: #831843;
+}
+
+.dropdown-option.selected {
+    background: rgba(249, 168, 212, 0.2);
+    color: #831843;
+    font-weight: 600;
+}
+
+.dropdown-option.selected:hover {
+    background: rgba(249, 168, 212, 0.25);
+}
+
+/* Scrollbar styling for dropdown */
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: rgba(249, 168, 212, 0.1);
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: rgba(249, 168, 212, 0.5);
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(249, 168, 212, 0.7);
+}
+
 .password-hint,
 .username-hint,
 .country-hint {
@@ -241,10 +366,24 @@
         height: auto;
         min-height: 100vh;
     }
+
+    .signup-redirect {
+        margin-right: 2rem;
+        padding-right: 1rem; /* Maintain right padding on mobile */
+    }
     
     .signup-left {
         padding: 3rem 2rem 2rem 2rem;
         min-height: 400px;
+    }
+    
+    .signup-right {
+        padding: 2rem 3rem 3rem 3rem;
+    }
+    
+    .signup-form-section {
+        margin: 0 auto;
+        padding: 0 1rem 1rem 1rem; /* Maintain right padding on mobile */
     }
     
     .hero-title {
@@ -255,12 +394,27 @@
     .hero-content {
         text-align: center;
     }
+
+    .dropdown-menu {
+        max-height: 160px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .signup-left,
     .signup-right {
-        padding: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+    
+
+
+    .signup-form-section {
+        padding: 0 1.5rem 1rem 1.5rem; /* Maintain right padding on mobile */
+        margin: 0 auto;
+    }
+    
+    .form-container {
+        padding: 0 0.5rem;
     }
     
     .hero-title {
@@ -269,5 +423,48 @@
     
     .form-title {
         font-size: 1.5rem;
+    }
+
+    .dropdown-trigger {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-option {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .dropdown-menu {
+        max-height: 140px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .signup-left,
+    .signup-right {
+        padding: 1rem 1.5rem;
+    }
+    
+    .signup-form-section {
+        padding: 1rem 0.5rem 1rem 0.2rem;
+        margin-right: 16px;
+        margin: 0 auto;
+    }
+    
+    .form-container {
+        padding: 0 0.8rem;
+    }
+    
+    
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .form-title {
+        font-size: 1.3rem;
+    }
+    
+    .dropdown-menu {
+        max-height: 120px;
     }
 }

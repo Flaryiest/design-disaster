@@ -341,16 +341,16 @@
 .how-it-works-section {
     background: rgba(255, 255, 255, 0);
     padding: 6rem 2rem;
-    margin-top: 10rem;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 100%;
-    height: 45%;
+    height: 75%;
+    min-height: 600px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
     z-index: 0;
 }
@@ -358,6 +358,7 @@
 .how-it-works-background {
     width: 100%;
     height: 70dvh;
+    min-height: 600px;
 }
 
 .how-it-works-container {

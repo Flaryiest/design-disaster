@@ -150,7 +150,6 @@ body {
   min-width: 200px;
   min-height: 100dvh;
   overflow-x: hidden;
-  overflow-y: scroll;
   max-width: 100dvw;
 }
 

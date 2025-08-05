@@ -1,6 +1,7 @@
 import "./researchAssistant.css"
 import { Link } from "react-router-dom"
 import Navbar from "../../../components/navbar/navbar"
+import Footer from "../../../components/footer/footer"
 
 export default function ResearchAssistantPage() {
     return (
@@ -153,6 +154,7 @@ export default function ResearchAssistantPage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

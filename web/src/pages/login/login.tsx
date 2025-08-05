@@ -1,6 +1,7 @@
 import styles from "./login.module.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 export default function LoginPage() {
     const [formData, setFormData] = useState({
@@ -113,6 +114,7 @@ export default function LoginPage() {
                     Don't have an account? <Link to="/signup">Sign up</Link>
                 </p>
             </div>
+            <Footer />
         </div>
     );
 }

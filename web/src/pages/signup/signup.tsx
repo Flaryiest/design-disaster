@@ -1,6 +1,7 @@
 import "./signup.css"
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 export default function SignUpPage() {
     const [formData, setFormData] = useState({
@@ -317,6 +318,7 @@ export default function SignUpPage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

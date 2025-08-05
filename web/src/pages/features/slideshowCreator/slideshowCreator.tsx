@@ -1,6 +1,7 @@
 import "./slideshowCreator.css"
 import { Link } from "react-router-dom"
 import Navbar from "../../../components/navbar/navbar"
+import Footer from "../../../components/footer/footer"
 
 export default function SlideshowCreatorPage() {
     return (
@@ -158,6 +159,7 @@ export default function SlideshowCreatorPage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

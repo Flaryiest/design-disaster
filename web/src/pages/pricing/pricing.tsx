@@ -1,5 +1,6 @@
 import "./pricing.css"
 import Navbar from "../../components/navbar/navbar.tsx";
+import Footer from "../../components/footer/footer";
 import { useState } from "react";
 import { pricingPlans, type PricingPlan, type Feature } from "./pricingData.ts";
 
@@ -102,6 +103,7 @@ export default function PricingPage() {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     </>
 }

@@ -6,7 +6,8 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 10rem;
-    max-width: 100%;
+    max-width: 100dvw;
+    box-sizing: border-box;
 }
 
 .section-one-background {

@@ -98,14 +98,9 @@ export default function Navbar() {
             {isMenuOpen && (
                 <div className="mobile-menu-overlay" onClick={closeMenu}>
                     <div className="mobile-menu-content" onClick={(e) => e.stopPropagation()}>
-                        {/* Close Button */}
-                        <button className="close-button" onClick={closeMenu}>
-                            ×
-                        </button>
-
                         {/* Navigation Links */}
                         <nav className="mobile-nav">
-                            <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Mythea</Link>
+
                             <Link to="/pricing" className="mobile-nav-link" onClick={closeMenu}>Pricing</Link>
                             
                             {/* Features Section */}
@@ -127,11 +122,6 @@ export default function Navbar() {
                             
                             <Link to="/demo" className="mobile-nav-link" onClick={closeMenu}>Demo</Link>
                             
-                            {/* Company Section */}
-                            <div className="mobile-nav-section">
-                                <h3 className="mobile-nav-section-title">Company</h3>
-                                <Link to="/careers" className="mobile-nav-link" onClick={closeMenu}>Careers</Link>
-                            </div>
 
                             {/* Actions */}
                             <div className="mobile-nav-actions">

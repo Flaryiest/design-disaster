@@ -63,7 +63,7 @@ export default function LoginPage() {
     return (
         <div className={styles.loginPage}>
             <div className={styles.loginContainer}>
-                <h1 className={styles.loginTitle}>Sign in to Fable</h1>
+                <h1 className={styles.loginTitle}>Sign in to Mythea</h1>
                 
                 <form onSubmit={handleSubmit} className={styles.loginForm}>
                     <div className={styles.formGroup}>

@@ -46,7 +46,7 @@ export default function Navbar() {
         <>
             <div className="navbar-container">
                 <nav className="navbar">
-                    <h1 className="navbar-title"><Link to="/">Fable</Link></h1>
+                    <h1 className="navbar-title"><Link to="/">Mythea</Link></h1>
 
                     {/* Desktop Navigation */}
                     <ul className="navbar-links desktop-only">
@@ -105,7 +105,7 @@ export default function Navbar() {
 
                         {/* Navigation Links */}
                         <nav className="mobile-nav">
-                            <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Fable</Link>
+                            <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Mythea</Link>
                             <Link to="/pricing" className="mobile-nav-link" onClick={closeMenu}>Pricing</Link>
                             
                             {/* Features Section */}

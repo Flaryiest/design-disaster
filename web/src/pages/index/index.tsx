@@ -12,7 +12,7 @@ export default function IndexPage() {
             </div>
             <div className="how-it-works-section">
                 <div className="how-it-works-container">
-                    <p className="how-it-works-subtitle">How Fable works</p>
+                    <p className="how-it-works-subtitle">How Mythea works</p>
                     <h2 className="how-it-works-title">Transform your academic workflow with three simple steps that leverage cutting-edge AI technology to enhance your learning experience and boost your grades</h2>
                 </div>
             </div>
@@ -22,7 +22,7 @@ export default function IndexPage() {
                         <p className="section-one-alert-text">We just launched!</p>
                         <Link to="/demo" className="section-one-alert-link">Learn more</Link>
                     </div>
-                    <h1 className="section-one-title">Fable has you covered in every way: presentations, notes, and assignments</h1>
+                    <h1 className="section-one-title">Mythea has you covered in every way: presentations, notes, and assignments</h1>
                     <p className="section-one-description">We've built the AI solution to meaningless fluff, enhancing your learning and increasing your grades</p>
                     <Link to="/signup" className="section-one-signup-link">Sign Up!</Link>
                 </div>
@@ -99,7 +99,7 @@ export default function IndexPage() {
                             <div className="sidebar-content">
                                 <h3 className="sidebar-title">Get started fast with proven templates</h3>
                                 <p className="sidebar-description">
-                                    Fable's infrastructure powers over 150 hours of study sessions 
+                                    Mythea's infrastructure powers over 150 hours of study sessions 
                                     every week—so you can trust it's battle-tested.
                                 </p>
                                 <button className="sidebar-cta">Talk to academic advisor</button>
@@ -233,7 +233,7 @@ export default function IndexPage() {
             <div className="cta-section">
                 <div className="cta-container">
                     <h2 className="cta-title">Ready to transform your learning?</h2>
-                    <p className="cta-description">Join thousands of students who are already using Fable to enhance their academic performance.</p>
+                    <p className="cta-description">Join thousands of students who are already using Mythea to enhance their academic performance.</p>
                     <div className="cta-buttons">
                         <Link to="/signup" className="cta-primary">Get Started Free</Link>
                         <Link to="/demo" className="cta-secondary">Watch Demo</Link>

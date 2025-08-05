@@ -133,7 +133,7 @@ export default function SignUpPage() {
                             <div className="hero-content">
                                 <h1 className="hero-title">Create your free account</h1>
                                 <p className="hero-description">
-                                    Explore Fable's core features for individuals and organizations.
+                                    Explore Mythea's core features for individuals and organizations.
                                 </p>
                                 
                                 {/* See what's included section */}
@@ -201,7 +201,7 @@ export default function SignUpPage() {
                         <div className="signup-form-section">
                             <div className="form-container">
                                 <div className="form-header">
-                                    <h2 className="form-title">Sign up to Fable</h2>
+                                    <h2 className="form-title">Sign up to Mythea</h2>
                                 </div>
                                 <form onSubmit={handleSubmit} className="signup-form">
                                     {/* Email Field */}
@@ -307,8 +307,8 @@ export default function SignUpPage() {
                                     <p className="terms-text">
                                         By creating an account, you agree to the{' '}
                                         <a href="#" className="terms-link">Terms of Service</a>. For more
-                                        information about Fable's privacy practices, see the{' '}
-                                        <a href="#" className="terms-link">Fable Privacy Statement</a>.
+                                        information about Mythea's privacy practices, see the{' '}
+                                        <a href="#" className="terms-link">Mythea Privacy Statement</a>.
                                         We'll occasionally send you account-related emails.
                                     </p>
                                 </form>

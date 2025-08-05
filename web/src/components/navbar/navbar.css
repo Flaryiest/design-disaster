@@ -7,7 +7,7 @@
     margin-top: 10px;
     position: absolute;
     top: 0;
-    z-index: 9999;
+    z-index: 10000;
 }
 
 .navbar {
@@ -75,7 +75,7 @@
     min-width: 200px;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
-    z-index: 10001;
+    z-index: 10002;
     animation: dropdownAppear 0.2s ease-out;
 }
 

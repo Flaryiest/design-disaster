@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react"
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+    const [isMobileFeaturesOpen, setIsMobileFeaturesOpen] = useState(false);
     const featuresRef = useRef<HTMLLIElement>(null);
 
     const toggleMenu = () => {
@@ -21,6 +22,10 @@ export default function Navbar() {
 
     const closeFeaturesDropdown = () => {
         setIsFeaturesOpen(false);
+    };
+
+    const toggleMobileFeatures = () => {
+        setIsMobileFeaturesOpen(!isMobileFeaturesOpen);
     };
 
     // Close features dropdown when clicking outside
@@ -57,10 +62,10 @@ export default function Navbar() {
                             </button>
                             {isFeaturesOpen && (
                                 <div className="features-dropdown">
-                                    <Link to="/features/research-assistant" className="dropdown-item" onClick={closeFeaturesDropdown}>
+                                    <Link to="/features/research" className="dropdown-item" onClick={closeFeaturesDropdown}>
                                         Research Assistant
                                     </Link>
-                                    <Link to="/features/slideshow-creator" className="dropdown-item" onClick={closeFeaturesDropdown}>
+                                    <Link to="/features/slideshow" className="dropdown-item" onClick={closeFeaturesDropdown}>
                                         Slideshow Creator
                                     </Link>
                                 </div>
@@ -98,9 +103,19 @@ export default function Navbar() {
                             
                             {/* Features Section */}
                             <div className="mobile-nav-section">
-                                <h3 className="mobile-nav-section-title">Features</h3>
-                                <Link to="/features/research-assistant" className="mobile-nav-link" onClick={closeMenu}>Research Assistant</Link>
-                                <Link to="/features/slideshow-creator" className="mobile-nav-link" onClick={closeMenu}>Slideshow Creator</Link>
+                                <button 
+                                    className="mobile-nav-section-title mobile-features-toggle" 
+                                    onClick={toggleMobileFeatures}
+                                >
+                                    Features
+                                    <span className={`mobile-dropdown-arrow ${isMobileFeaturesOpen ? 'open' : ''}`}>▼</span>
+                                </button>
+                                {isMobileFeaturesOpen && (
+                                    <div className="mobile-features-dropdown">
+                                        <Link to="/features/research" className="mobile-nav-link mobile-feature-link" onClick={closeMenu}>Research Assistant</Link>
+                                        <Link to="/features/slideshow" className="mobile-nav-link mobile-feature-link" onClick={closeMenu}>Slideshow Creator</Link>
+                                    </div>
+                                )}
                             </div>
                             
                             <Link to="/demo" className="mobile-nav-link" onClick={closeMenu}>Demo</Link>

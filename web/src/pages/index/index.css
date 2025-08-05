@@ -8,6 +8,7 @@
     padding-bottom: 10rem;
     max-width: 100dvw;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section-one-background {
@@ -1208,6 +1209,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -1224,6 +1226,14 @@
         grid-column: 1;
         display: flex;
         flex-direction: column;
+    }
+
+    .metrics-section {
+        box-sizing: border-box;
+    }
+
+    .features-dashboard-section {
+        box-sizing: border-box;
     }
     
     .collaborate-card,

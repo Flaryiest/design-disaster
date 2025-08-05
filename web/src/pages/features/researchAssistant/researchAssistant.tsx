@@ -18,7 +18,7 @@ export default function ResearchAssistantPage() {
                         research assistance
                     </h1>
                     <p className="research-hero-description">
-                        Accelerate your research workflow with AI-powered insights and comprehensive source analysis.
+                        Get all the sources and citations you need with AI-powered research assistance. Complete with formatting, progress tracking, and rich text editing.
                     </p>
                     <Link to="/signup" className="research-hero-cta">
                         Start researching for free
@@ -36,7 +36,7 @@ export default function ResearchAssistantPage() {
                             Research
                         </h2>
                         <p className="research-content-description">
-                            Access thousands of academic sources and get AI-powered research assistance without spending a dime
+                            Access thousands of academic sources with AI formatting and citation generation. Like Cursor for research documents, with real-time progress tracking.
                         </p>
                     </div>
                     
@@ -106,7 +106,7 @@ export default function ResearchAssistantPage() {
                                 </svg>
                             </div>
                             <h3>Smart Source Discovery</h3>
-                            <p>AI automatically finds and ranks the most relevant academic sources for your research topic</p>
+                            <p>AI automatically finds and ranks the most relevant academic sources, with summaries and deeper dive options</p>
                         </div>
                         <div className="research-feature-card">
                             <div className="feature-icon">
@@ -115,8 +115,8 @@ export default function ResearchAssistantPage() {
                                     <path d="M8 8H16M8 12H16M8 16H12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>Citation Analysis</h3>
-                            <p>Get instant citation metrics, credibility scores, and bias analysis for all sources</p>
+                            <h3>AI Formatting & Citations</h3>
+                            <p>Automatic formatting and citation generation with real-time progress tracking and completion checks</p>
                         </div>
                         <div className="research-feature-card">
                             <div className="feature-icon">
@@ -125,8 +125,8 @@ export default function ResearchAssistantPage() {
                                     <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>Auto-Generated Notes</h3>
-                            <p>Extract key insights and create structured notes from multiple sources automatically</p>
+                            <h3>Rich Text Editor</h3>
+                            <p>AI detects what you've written in real-time, providing intelligent suggestions and content analysis</p>
                         </div>
                         <div className="research-feature-card">
                             <div className="feature-icon">
@@ -135,8 +135,8 @@ export default function ResearchAssistantPage() {
                                     <path d="M12 6L12 12L16 14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>Research Synthesis</h3>
-                            <p>Combine findings from multiple sources into coherent research summaries and outlines</p>
+                            <h3>Template Selection</h3>
+                            <p>Choose from research templates or have AI generate custom ones based on your assignment requirements</p>
                         </div>
                     </div>
                 </div>
@@ -145,8 +145,8 @@ export default function ResearchAssistantPage() {
             {/* CTA Section */}
             <div className="research-cta-section">
                 <div className="research-cta-container">
-                    <h2 className="research-cta-title">Ready to supercharge your research?</h2>
-                    <p className="research-cta-description">Join thousands of students and researchers using AI to accelerate their work.</p>
+                    <h2 className="research-cta-title">Ready to revolutionize your research workflow?</h2>
+                    <p className="research-cta-description">Join thousands of high school students using AI to ace their research assignments and free up time for what matters.</p>
                     <div className="research-cta-buttons">
                         <Link to="/signup" className="research-cta-primary">Get Started Free</Link>
                         <Link to="/demo" className="research-cta-secondary">See Demo</Link>

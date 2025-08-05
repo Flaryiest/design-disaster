@@ -18,7 +18,7 @@ export default function SlideshowCreatorPage() {
                         presentation builder
                     </h1>
                     <p className="slideshow-hero-description">
-                        Create stunning presentations instantly with AI-powered design and content generation.
+                        Transform documents, text, or images into stunning presentations with AI-powered design, formatting, and script generation.
                     </p>
                     <Link to="/signup" className="slideshow-hero-cta">
                         Start creating for free
@@ -36,7 +36,7 @@ export default function SlideshowCreatorPage() {
                             Presentations
                         </h2>
                         <p className="slideshow-content-description">
-                            Transform your ideas into beautiful presentations with AI-powered layouts, content suggestions, and design templates
+                            Upload any content and get complete presentations with formatting, images, scripts, and cue cards. Everything you need for an aesthetic presentation.
                         </p>
                     </div>
                     
@@ -111,8 +111,8 @@ export default function SlideshowCreatorPage() {
                                     <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>AI Design Templates</h3>
-                            <p>Choose from hundreds of professionally designed templates that adapt to your content automatically</p>
+                            <h3>AI Design & Scaffolding</h3>
+                            <p>Select from customizable scaffolding styles with AI-powered formatting, images, and aesthetic design elements</p>
                         </div>
                         <div className="slideshow-feature-card">
                             <div className="feature-icon">
@@ -121,8 +121,8 @@ export default function SlideshowCreatorPage() {
                                     <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>Smart Content Generation</h3>
-                            <p>AI creates compelling slide content, bullet points, and talking points based on your topic</p>
+                            <h3>Multi-Format Input</h3>
+                            <p>Upload documents, text, images, or any content type and get AI-generated presentations with smart formatting</p>
                         </div>
                         <div className="slideshow-feature-card">
                             <div className="feature-icon">
@@ -130,8 +130,8 @@ export default function SlideshowCreatorPage() {
                                     <path d="M18 20V10M12 20V4M6 20V14" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <h3>Dynamic Charts & Graphs</h3>
-                            <p>Automatically generate relevant visualizations and infographics to support your points</p>
+                            <h3>Complete Presentation Package</h3>
+                            <p>Get slides, speaker notes, scripts, and cue cards - everything needed for a professional presentation</p>
                         </div>
                         <div className="slideshow-feature-card">
                             <div className="feature-icon">
@@ -140,8 +140,8 @@ export default function SlideshowCreatorPage() {
                                     <circle cx="12" cy="12" r="3" fill="black"/>
                                 </svg>
                             </div>
-                            <h3>Audience Optimization</h3>
-                            <p>Tailor your presentation style and complexity to match your target audience</p>
+                            <h3>Custom Scaffolding Styles</h3>
+                            <p>Choose bullet points, paragraphs, or custom formatting styles with AI-powered content optimization</p>
                         </div>
                     </div>
                 </div>
@@ -150,8 +150,8 @@ export default function SlideshowCreatorPage() {
             {/* CTA Section */}
             <div className="slideshow-cta-section">
                 <div className="slideshow-cta-container">
-                    <h2 className="slideshow-cta-title">Ready to create amazing presentations?</h2>
-                    <p className="slideshow-cta-description">Join thousands of students and professionals creating presentations in minutes, not hours.</p>
+                    <h2 className="slideshow-cta-title">Ready to create amazing presentations effortlessly?</h2>
+                    <p className="slideshow-cta-description">Join thousands of high school students creating presentations in minutes, not hours, and acing their assignments.</p>
                     <div className="slideshow-cta-buttons">
                         <Link to="/signup" className="slideshow-cta-primary">Get Started Free</Link>
                         <Link to="/demo" className="slideshow-cta-secondary">See Demo</Link>

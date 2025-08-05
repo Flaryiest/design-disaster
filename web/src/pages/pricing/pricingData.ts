@@ -22,18 +22,22 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'free',
     name: 'Free',
-    description: 'All essential features to get you started.',
+    description: 'Essential assignment templates and outlines to get you started.',
     monthlyPrice: 0,
     annualPrice: 0,
     buttonText: 'Get Started Free',
     buttonType: 'secondary',
     features: [
       {
-        text: '5 AI responses per day',
+        text: 'Assignment templates & outlines',
         icon: 'check'
       },
       {
-        text: 'Basic homework assistance',
+        text: 'Basic research scaffolding',
+        icon: 'check'
+      },
+      {
+        text: 'Limited AI responses (5 per day)',
         icon: 'check'
       },
       {
@@ -43,45 +47,50 @@ export const pricingPlans: PricingPlan[] = [
       {
         text: 'Community support',
         icon: 'check'
-      },
-      {
-        text: 'Basic document uploads',
-        icon: 'check'
       }
     ]
   },
   {
-    id: 'premium',
-    name: 'Premium',
-    description: 'Enhanced features for dedicated learners.',
-    monthlyPrice: 5,
-    annualPrice: 50, // $4.17/month when billed annually
-    buttonText: 'Start Premium',
+    id: 'core',
+    name: 'Core',
+    description: 'Full functionality with moderate limits for dedicated students.',
+    monthlyPrice: 10,
+    annualPrice: 100,
+    buttonText: 'Start Core',
     buttonType: 'primary',
     isFeatured: true,
     badge: 'Most Popular',
     features: [
       {
-        text: '50 AI responses per day',
+        text: 'Full AI Research Assistant',
         icon: 'check'
       },
       {
-        text: 'Advanced homework help with explanations',
+        text: 'AI Presentation Creation',
+        icon: 'check'
+      },
+      {
+        text: 'Essay & Assignment Scaffolds',
+        icon: 'check'
+      },
+      {
+        text: 'Rich text editor with AI detection',
+        icon: 'check'
+      },
+      {
+        text: 'Source summaries & citations',
+        icon: 'check'
+      },
+      {
+        text: 'Progress tracking & completion checks',
         icon: 'check'
       },
       {
         text: 'Faster response times',
         icon: 'check',
-        badge: '≤5 sec'
+        badge: '≤30 sec'
       },
-      {
-        text: 'Priority email support',
-        icon: 'check'
-      },
-      {
-        text: 'Multiple document formats supported',
-        icon: 'check'
-      },
+
       {
         text: 'Plus everything in Free',
         icon: 'plus'
@@ -89,45 +98,44 @@ export const pricingPlans: PricingPlan[] = [
     ]
   },
   {
-    id: 'pro',
-    name: 'Pro',
-    description: 'Unlimited access for power users.',
-    monthlyPrice: 20,
-    annualPrice: 200, // $16.67/month when billed annually
-    buttonText: 'Go Pro',
+    id: 'premium',
+    name: 'Premium',
+    description: 'Enhanced fine-tuning and variety with generous limits.',
+    monthlyPrice: 30,
+    annualPrice: 300,
+    buttonText: 'Go Premium',
     buttonType: 'secondary',
     features: [
       {
-        text: 'Unlimited AI responses',
+        text: 'Advanced AI fine-tuning options',
         icon: 'check'
       },
       {
-        text: 'Access to most advanced AI models',
+        text: 'Extended template variety',
         icon: 'check'
       },
       {
-        text: 'Instant responses',
-        icon: 'check',
-        badge: '≤1 sec'
-      },
-      {
-        text: 'Personalized study recommendations',
+        text: 'Custom presentation styles',
         icon: 'check'
       },
       {
-        text: 'Custom learning paths and goals',
+        text: 'Rubric-based grading assistance',
         icon: 'check'
       },
       {
-        text: 'Advanced analytics and progress tracking',
+        text: 'Exemplar analysis & comparison',
         icon: 'check'
       },
       {
-        text: '24/7 priority support',
+        text: 'Script & cue card generation',
         icon: 'check'
       },
       {
-        text: 'Plus everything in Premium',
+        text: 'Priority support',
+        icon: 'check'
+      },
+      {
+        text: 'Plus everything in Core',
         icon: 'plus'
       }
     ]

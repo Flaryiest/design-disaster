@@ -37,8 +37,8 @@ export default function PricingPage() {
             <div className="pricing-header">
                 <h1 className="pricing-title">Pricing</h1>
                 <p className="pricing-description">
-                    Whether you're using Mythea for meetings, homework, 
-                    sales calls, or just curious, it's fully free to start.
+                    Whether you're using Mythea for research, presentations, 
+                    essays, or any high school assignment, it's fully free to start.
                 </p>
                 
                 {/* Billing Toggle */}

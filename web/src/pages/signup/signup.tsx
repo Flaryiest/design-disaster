@@ -133,7 +133,7 @@ export default function SignUpPage() {
                             <div className="hero-content">
                                 <h1 className="hero-title">Create your free account</h1>
                                 <p className="hero-description">
-                                    Explore Mythea's core features for individuals and organizations.
+                                    Explore Mythea's core features for high school students and educators.
                                 </p>
                                 
                                 {/* See what's included section */}

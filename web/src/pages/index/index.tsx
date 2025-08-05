@@ -22,8 +22,8 @@ export default function IndexPage() {
                         <p className="section-one-alert-text">We just launched!</p>
                         <Link to="/demo" className="section-one-alert-link">Learn more</Link>
                     </div>
-                    <h1 className="section-one-title">Mythea has you covered in every way: presentations, notes, and assignments</h1>
-                    <p className="section-one-description">We've built the AI solution to meaningless fluff, enhancing your learning and increasing your grades</p>
+                    <h1 className="section-one-title">Mythea has you covered in every way: research, presentations, and assignments</h1>
+                    <p className="section-one-description">We've built the AI solution to eliminate meaningless fluff.</p>
                     <Link to="/signup" className="section-one-signup-link">Sign Up!</Link>
                 </div>
                 <div className="homework-visual">
@@ -99,7 +99,7 @@ export default function IndexPage() {
                             <div className="sidebar-content">
                                 <h3 className="sidebar-title">Get started fast with proven templates</h3>
                                 <p className="sidebar-description">
-                                    Mythea's infrastructure powers over 150 hours of study sessions 
+                                    Mythea's infrastructure powers over 150 hours of assignment assistance 
                                     every week—so you can trust it's battle-tested.
                                 </p>
                                 <button className="sidebar-cta">Talk to academic advisor</button>
@@ -233,7 +233,7 @@ export default function IndexPage() {
             <div className="cta-section">
                 <div className="cta-container">
                     <h2 className="cta-title">Ready to transform your learning?</h2>
-                    <p className="cta-description">Join thousands of students who are already using Mythea to enhance their academic performance.</p>
+                    <p className="cta-description">Join thousands of high school students who are already using Mythea to ace their assignments and free up time to relax.</p>
                     <div className="cta-buttons">
                         <Link to="/signup" className="cta-primary">Get Started Free</Link>
                         <Link to="/demo" className="cta-secondary">Watch Demo</Link>

@@ -55,17 +55,24 @@ export default function Navbar() {
                             <button 
                                 className="navbar-link features-trigger" 
                                 onClick={toggleFeatures}
-                                onBlur={() => setTimeout(closeFeaturesDropdown, 150)}
                             >
                                 Features 
                                 <span className={`dropdown-arrow ${isFeaturesOpen ? 'open' : ''}`}>▼</span>
                             </button>
                             {isFeaturesOpen && (
                                 <div className="features-dropdown">
-                                    <Link to="/features/research" className="dropdown-item" onClick={closeFeaturesDropdown}>
+                                    <Link 
+                                        to="/features/research" 
+                                        className="dropdown-item" 
+                                        onClick={closeFeaturesDropdown}
+                                    >
                                         Research Assistant
                                     </Link>
-                                    <Link to="/features/slideshow" className="dropdown-item" onClick={closeFeaturesDropdown}>
+                                    <Link 
+                                        to="/features/slideshow" 
+                                        className="dropdown-item" 
+                                        onClick={closeFeaturesDropdown}
+                                    >
                                         Slideshow Creator
                                     </Link>
                                 </div>
